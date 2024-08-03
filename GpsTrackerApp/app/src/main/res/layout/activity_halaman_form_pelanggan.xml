@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanFormPelangganActivity"
+    android:background="@drawable/gradientbackground">
+
+    <RelativeLayout
+        android:layout_width="352dp"
+        android:layout_height="514dp"
+        android:background="@drawable/reactanglelogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="66dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="205dp"
+            android:text="@string/nama"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edNamaPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNama"
+            android:layout_alignStart="@+id/textNama"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/rectangleinputform"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:hint="@string/masukkan_nama"
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textNIK"
+            android:layout_width="80dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/edNamaPelanggan"
+            android:layout_alignStart="@+id/edNamaPelanggan"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="192dp"
+            android:text="@string/nik"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edNIK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNIK"
+            android:layout_alignStart="@+id/textNIK"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/rectangleinputform"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:hint="@string/masukkan_nik"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textnomortelepon"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edNIK"
+            android:layout_alignStart="@+id/edNamaPelanggan"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="151dp"
+            android:text="Nomor Telepon"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edNoTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textnomortelepon"
+            android:layout_alignStart="@+id/textNIK"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rectangleinputform"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:hint="@string/masukkan_nomor_telepon"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/textDurasi"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edNoTelp"
+            android:layout_alignStart="@+id/edNamaPelanggan"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="144dp"
+            android:text="@string/durasi"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edDurasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDurasi"
+            android:layout_alignStart="@+id/textNIK"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rectangleinputform"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:hint="masukkan durasi peminjaman"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/BtnKirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edDurasi"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/kirimbutton" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

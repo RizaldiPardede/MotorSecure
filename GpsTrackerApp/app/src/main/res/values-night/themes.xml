@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GpsTrackerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#FFC93C</item>
+
+        <!-- Style for the action overflow menu -->
+        <item name="android:actionOverflowMenuStyle">@style/MyOverflowMenuStyle</item>
+    </style>
+
+    <style name="Theme.GpsTrackerApp" parent="Base.Theme.GpsTrackerApp" />
+
+    <!-- Style for the overflow menu -->
+    <style name="MyOverflowMenuStyle" parent="Widget.Material3.PopupMenu.Overflow">
+        <item name="android:tint">@android:color/white</item> <!-- Warna ikon -->
+    </style>
+</resources>

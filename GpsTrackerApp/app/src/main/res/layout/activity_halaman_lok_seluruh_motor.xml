@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HalamanLokSeluruhMotorActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottomlocation"
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bottombar"
+
+        >
+
+        <TextView
+            android:id="@+id/TVmerkmotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+
+            android:layout_marginTop="26dp"
+            android:text="Motor Beat 2019"
+
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TvPlatMotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVmerkmotor"
+            android:layout_alignStart="@+id/TVmerkmotor"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:text="N 69214 AR"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/dot_ketersediaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/TVmerkmotor" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/MotorPict"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+
+            android:layout_below="@+id/TvPlatMotor"
+            android:layout_alignStart="@+id/TvPlatMotor"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dummymotor" />
+
+        <TextView
+            android:id="@+id/detailpenyewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVmerkmotor"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/TvPlatMotor"
+            android:text="Detail Penyewa"
+            android:textColor="#FFC93C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVnamapeminjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailpenyewa"
+            android:layout_alignStart="@+id/detailpenyewa"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="9dp"
+            android:text="Rizaldi Pardede"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/TVNIK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVnamapeminjam"
+            android:layout_alignStart="@+id/TVnamapeminjam"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:text="121203020100002"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/TVnomortelepon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVNIK"
+            android:layout_alignStart="@+id/TVNIK"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:text="085678451233"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/TVdurasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVnomortelepon"
+            android:layout_alignStart="@+id/TVnomortelepon"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:text="24 Jam"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/IBcekdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MotorPict"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="88dp"
+            android:background="@drawable/imagebuttoncekdetail" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

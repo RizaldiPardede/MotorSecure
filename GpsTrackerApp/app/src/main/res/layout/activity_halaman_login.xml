@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanLoginActivity"
+    android:background="@drawable/gradientbackground">
+
+    <RelativeLayout
+        android:layout_width="287dp"
+        android:layout_height="491dp"
+        android:background="@drawable/reactanglelogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="66dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="203dp"
+            android:layout_marginEnd="206dp"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEmail"
+            android:layout_alignStart="@+id/textEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/rectangleinputform"
+            android:inputType="textEmailAddress"
+            android:hint="@string/masukkan_email"
+            android:textSize="10sp"
+            android:paddingStart="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="80dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/edEmail"
+            android:layout_alignStart="@+id/edEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="192dp"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textPassword"
+            android:layout_alignStart="@+id/textPassword"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/rectangleinputform"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:hint="@string/masukkan_email"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="345dp"
+            android:background="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="49dp"
+            android:background="@drawable/loginbutton" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

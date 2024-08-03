@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/cardlistbackground"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myPict"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/dummymotor" />
+
+        <TextView
+            android:id="@+id/TVmerkmotor"
+            android:layout_width="161dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/myPict"
+            android:text="Motor Beat 2019"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVnoplat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVmerkmotor"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="-15dp"
+            android:layout_toEndOf="@+id/myPict"
+            android:text="N 69214 AR"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/TVharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVnoplat"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/myPict"
+            android:text="Rp.150.000/24jam"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/dot_ketersediaan"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toEndOf="@+id/TVmerkmotor"
+            android:background="@drawable/dot_tersedia" />
+
+        <TextView
+            android:id="@+id/TVketersediaan"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/dot_ketersediaan"
+            android:text="Tersedia"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

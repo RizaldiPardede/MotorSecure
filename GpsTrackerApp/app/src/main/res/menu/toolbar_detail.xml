@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_customer"
+        android:icon="@drawable/baseline_add_box_24"
+        android:title="Tambah Penyewa"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/delete_customer"
+        android:icon="@drawable/baseline_delete_forever_24"
+        android:title="Hapus Penyewa"
+        app:showAsAction="always|withText" />
+</menu>

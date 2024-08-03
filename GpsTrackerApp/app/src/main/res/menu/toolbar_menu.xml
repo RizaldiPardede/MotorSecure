@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_list"
+        android:icon="@drawable/baseline_list_24"
+        android:title="List Sepeda Motor" />
+    <item
+        android:id="@+id/action_map"
+        android:title="Peta" />
+    <item
+        android:id="@+id/action_keluar"
+        android:title="Keluar" />
+</menu>

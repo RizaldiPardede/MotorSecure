@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GpsTrackerApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="masukkan_email">masukkan email</string>
+    <string name="nama">Nama</string>
+    <string name="masukkan_nama">masukkan nama</string>
+    <string name="nik">NIK</string>
+    <string name="masukkan_nomor_telepon">masukkan nomor telepon</string>
+    <string name="masukkan_nik">masukkan NIK</string>
+    <string name="durasi">Durasi</string>
+    <string name="title_activity_halaman_utama">HalamanUtamaActivity</string>
+    <string name="lokasi_sepeda_motor_anda">Lokasi Sepeda Motor Anda</string>
+    <string name="sepeda_motor_yang_tersedia">Sepeda Motor yang tersedia</string>
+    <string name="title_activity_detail_motor">DetailMotorActivity</string>
+    <string name="honda_beat_2019">Honda Beat 2019</string>
+    <string name="n_6914_ar">N 6914 AR</string>
+    <string name="title_activity_halaman_lok_seluruh_motor">HalamanLokSeluruhMotorActivity</string>
+</resources>

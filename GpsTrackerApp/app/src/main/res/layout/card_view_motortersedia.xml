@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="128dp"
+        android:layout_height="157dp"
+        android:background="@drawable/backgroundlistmotorav">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myPict"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="34dp"
+            android:src="@drawable/dummymotor" />
+
+        <TextView
+            android:id="@+id/TvPlatMotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPict"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="ABC123"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvPlatMotor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Rp 150.000/24 jam"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/dot_ketersediaan"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+
+            android:layout_below="@+id/TVharga"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/dot_tersedia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVharga"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="19dp"
+            android:text="Tersedia"
+            android:textColor="@color/white"
+            android:textSize="5sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

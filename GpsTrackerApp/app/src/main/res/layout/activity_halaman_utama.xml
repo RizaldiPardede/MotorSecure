@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HalamanUtamaActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/shapeup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/shapeup">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="19dp"
+                android:text="Hai Rizaldi Pardede"
+                android:textColor="#FFC93C"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/salam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="71dp"
+                android:text="Tetap Pantau Sepeda Motor Anda"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TVlokasitext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shapeup"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="-7dp"
+            android:text="@string/lokasi_sepeda_motor_anda"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_below="@+id/TVlokasitext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="0dp" />
+
+        <TextView
+            android:id="@+id/TVmotortersediatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="-11dp"
+            android:text="@string/sepeda_motor_yang_tersedia"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/gpstrackcolorblue"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/MyOverflowMenuStyle"
+            map:subtitleTextColor="@color/white"
+            map:titleTextColor="@color/white"
+            android:elevation="4dp"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVmotortersediatext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="22dp"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            map:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/card_view_motortersedia" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</ScrollView>

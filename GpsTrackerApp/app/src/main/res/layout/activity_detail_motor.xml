@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailMotorActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_detail">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/gpstrackcolorblue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/MyOverflowMenuStyle"
+        map:subtitleTextColor="@color/white"
+        map:titleTextColor="@color/white"
+        android:elevation="4dp"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/MotorPict"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/dummymotor" />
+
+    <TextView
+        android:id="@+id/TVmerkmotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MotorPict"
+        android:layout_marginTop="14dp"
+        android:text="@string/honda_beat_2019"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#FFC93C"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        />
+
+    <TextView
+        android:id="@+id/TVnokendaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/TVmerkmotor"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="341dp"
+        android:text="@string/n_6914_ar"
+        android:textAlignment="center"
+        android:textColor="#FFC93C"
+        android:textSize="25sp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_peminjam"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-12dp"
+        android:background="@drawable/shapedown">
+
+        <TextView
+            android:id="@+id/TVnamapeminjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:text="Rizaldi Pardede"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/TVNIK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVnamapeminjam"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:text="121203020100002"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/TVnomortelepon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVNIK"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:text="089613730876"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ImageView_ketersediaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/map"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="126dp"
+            android:src="@drawable/tanda_tdktersedia" />
+
+        <fragment
+
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-1dp" />
+
+        <TextView
+            android:id="@+id/TVtidakterdapatpenyewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="262dp"
+            android:text="Tidak terdapat penyewa"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
